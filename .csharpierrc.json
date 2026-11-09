@@ -1,0 +1,7 @@
+{
+	"indentSize": 4,
+	"useTabs": true,
+	"printWidth": 120,
+	"endOfLine": "lf",
+	"xmlWhitespaceSensitivity": "strict"
+}
