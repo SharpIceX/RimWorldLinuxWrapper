@@ -16,8 +16,9 @@ export DOTNET_gcConcurrent=1
 export DOTNET_GCDynamicAdaptationMode=1
 
 # .NET JIT
-export DOTNET_TieredPGO=1
-export DOTNET_TieredCompilation=1
+# ! 疑似对 Harmony/MonoMod 有负优化
+# export DOTNET_TieredPGO=1
+# export DOTNET_TieredCompilation=1
 
 NEW_ARGS=()
 while (($#)); do
