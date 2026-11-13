@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -13,6 +14,20 @@ internal static class StartupHook
 		if (!AssemblyLoadContext.Default.Assemblies.Any(a => a.GetName().Name == "0Harmony"))
 			AssemblyLoadContext.Default.LoadFromAssemblyPath(harmonyPath);
 
-		DisableDLCCheck.Initialize();
+		var assembly = Assembly.GetExecutingAssembly();
+
+		foreach (var type in assembly.GetTypes().Where(t => t.IsDefined(typeof(RimWorldWrapperPatchAttribute), false)))
+		{
+			var method =
+				type.GetMethod(
+					"Initialize",
+					BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static,
+					null,
+					Type.EmptyTypes,
+					null
+				) ?? throw new InvalidOperationException($"补丁类 {type.FullName} 缺少 Initialize() 方法");
+
+			method.Invoke(null, null);
+		}
 	}
 }

@@ -5,6 +5,7 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using Verse;
 
+[RimWorldWrapperPatch]
 public static class DisableDLCCheck
 {
 	public static void Initialize()
