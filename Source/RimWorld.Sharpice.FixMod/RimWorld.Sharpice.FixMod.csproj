@@ -13,9 +13,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="public/**/*">
+		<Content Include="_public/**/*">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-			<Link>../$([MSBuild]::MakeRelative('$(MSBuildProjectDirectory)/public', '%(FullPath)'))</Link>
+			<Link>../$([MSBuild]::MakeRelative('$(MSBuildProjectDirectory)/_public', '%(FullPath)'))</Link>
 		</Content>
 	</ItemGroup>
 </Project>

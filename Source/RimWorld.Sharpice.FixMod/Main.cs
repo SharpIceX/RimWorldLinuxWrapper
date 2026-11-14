@@ -1,3 +1,5 @@
+using System.Reflection;
+using HarmonyLib;
 using Verse;
 
 public class Main : Mod
@@ -6,5 +8,10 @@ public class Main : Mod
 		: base(content)
 	{
 		Log.Message("Hello RimWorld Wrapper Fix Mod!");
+
+		var harmony = new Harmony("RimWorldWrapper.FixMod");
+		harmony.PatchAll(Assembly.GetExecutingAssembly());
+
+		Log.Message("RimWorld Wrapper Fix Mod Load Done");
 	}
 }
