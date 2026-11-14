@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimmessian Fox</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Rimmessian_fox"]/tradeTags</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Rimmessian_fox"]</xpath>
+				<value>
+					<tradeTags>
+						<li>AnimalUncommon</li>
+						<li>AnimalFighter</li>
+					</tradeTags>
+				</value>
+			</nomatch>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>SharpIce The RimWorld Fix Mod</name>
+	<author>SharpIce</author>
+	<packageId>RimWorld.Sharpice.FixMod</packageId>
+	<description>修复 RimWorld Mod 中各种错误</description>
+	<supportedVersions>
+		<li>1.7</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>hubertdragon.rimmessianfox</packageId>
+			<displayName>Rimmessian Fox</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3708558259</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>hubertdragon.rimmessianfox</li>
+	</loadAfter>
+</ModMetaData>
