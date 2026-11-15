@@ -16,9 +16,8 @@ export DOTNET_gcConcurrent=1
 export DOTNET_GCDynamicAdaptationMode=1
 
 # .NET JIT
-# ! 疑似对 Harmony/MonoMod 有负优化
-# export DOTNET_TieredPGO=1
-# export DOTNET_TieredCompilation=1
+export DOTNET_TieredPGO=1
+export DOTNET_TieredCompilation=1
 
 # bwrap 隔离参数
 BWRAP_ARGS=(
