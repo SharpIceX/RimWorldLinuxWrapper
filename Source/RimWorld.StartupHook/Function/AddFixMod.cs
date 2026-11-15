@@ -7,9 +7,7 @@ using Verse;
 [RimWorldWrapperPatch]
 public static class AddFixMod
 {
-	private static readonly string ModPath = Path.GetFullPath(
-		Path.Combine(Path.GetDirectoryName(typeof(AddFixMod).Assembly.Location)!, "..", "RimWorld.Sharpice.FixMod")
-	);
+	private static readonly string BaseDir = Path.GetDirectoryName(typeof(AddFixMod).Assembly.Location)!;
 
 	private static readonly Func<ModMetaData, bool> TryAddMod =
 		(Func<ModMetaData, bool>)
@@ -27,13 +25,21 @@ public static class AddFixMod
 
 	private static void PostfixRebuildModList()
 	{
-		if (!Directory.Exists(Path.Combine(ModPath, "About")))
+		AddAndActivate("RimWorld.Sharpice.ExtraContent");
+		AddAndActivate("RimWorld.Sharpice.FixMod");
+	}
+
+	private static void AddAndActivate(string folderName)
+	{
+		var modPath = Path.GetFullPath(Path.Combine(BaseDir, "..", folderName));
+
+		if (!Directory.Exists(Path.Combine(modPath, "About")))
 		{
-			Log.Warning($"未找到 FixMod 目录: {ModPath}");
+			Log.Warning($"未找到 {folderName} 目录: {modPath}");
 			return;
 		}
 
-		var meta = new ModMetaData(ModPath, false);
+		var meta = new ModMetaData(modPath, false);
 
 		if (!TryAddMod(meta))
 		{

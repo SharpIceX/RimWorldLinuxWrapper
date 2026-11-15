@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Nullable>enable</Nullable>
+		<DebugType>embedded</DebugType>
+		<TargetFramework>net10.0</TargetFramework>
+		<OutputPath>$(OutputPath)Assemblies/</OutputPath>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Lib.Harmony" Version="3.0.0-rc.5" PrivateAssets="all" />
+		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.5000-unstable" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="_public/**/*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Link>../$([MSBuild]::MakeRelative('$(MSBuildProjectDirectory)/_public', '%(FullPath)'))</Link>
+		</Content>
+	</ItemGroup>
+</Project>

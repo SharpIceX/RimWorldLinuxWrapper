@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	使用 Gemini Hydrogen 4 完全翻译（没有人工干预）
+-->
+<LanguageData>
+	<KIG_SettingsCategory>文化好感度</KIG_SettingsCategory>
+	<KIG_SettingsDescription>自然好感度计算公式为：G0 = 基础好感度 + b × 文化距离 + 可选模因好感度修正（各项文化距离贡献值单独四舍五入）。最大好感度计算公式为：GMax = 原始 G0 + A（在限制数值上下限前计算）。</KIG_SettingsDescription>
+	<KIG_BaseGoodwill>基础好感度 (D = 0)</KIG_BaseGoodwill>
+	<KIG_BaseGoodwillDescription>当测算的文化距离为零时，未计入模因修正前的自然好感度。数值越高，派系间越容易保持中立或结盟。允许范围：0 至 100，默认值：60。</KIG_BaseGoodwillDescription>
+	<KIG_DistanceCoefficient>距离系数 (b)</KIG_DistanceCoefficient>
+	<KIG_DistanceCoefficientDescription>每点文化距离所引起的好感度变化。负值越小（绝对值越大），文化分歧对自然好感度的削减越显著；设为 0 则取消距离惩罚。允许范围：-10 至 0，默认值：-4。</KIG_DistanceCoefficientDescription>
+	<KIG_UpdatePeriod>NPC 派系间检测周期 (ticks)</KIG_UpdatePeriod>
+	<KIG_UpdatePeriodDescription>检测两个 NPC 派系之间是否发生文化变更，或是否通过常规好感度 API 之外的途径直接修改了好感度的间隔时间。允许范围：1,000 至 100,000 ticks（步长 1,000），默认值：1,000。设为 30,000 约等于游戏内每天检测两次。玩家与 NPC 派系的关系始终每 1,000 ticks 检测一次，常规好感度变化则会立即更新。</KIG_UpdatePeriodDescription>
+	<KIG_ReduceAggressiveMemeCooperation>劫掠主义与至上主义更难合作</KIG_ReduceAggressiveMemeCooperation>
+	<KIG_ReduceAggressiveMemeCooperationDescription>当检视的 NPC 文化包含“劫掠主义”、“至上主义”或同时包含两者时，将其正向好感容限 A 减半一次。完全相同的文化仍可获得 A = 70。默认启用。</KIG_ReduceAggressiveMemeCooperationDescription>
+	<KIG_ApplyVanillaMemeCorrections>应用模因好感度修正</KIG_ApplyVanillaMemeCorrections>
+	<KIG_ApplyVanillaMemeCorrectionsDescription>在将文化距离换算为好感度后，额外叠加《文化》DLC 及受支持的可选 Mod（如 Alpha Memes）所提供的固定好感度修正。可选 Mod 规则仅在对应模因存在时生效；若双方派系共享相同的相关文化，则不应用此修正。默认启用。</KIG_ApplyVanillaMemeCorrectionsDescription>
+	<KIG_ResetToDefaults>恢复默认设置</KIG_ResetToDefaults>
+	<KIG_ExistingSaveNote>修改这些设置后，系统会立即重新计算自然好感度与最大好感度。现有好感度除非超出新的上限，否则将保持不变；日常好感度自然波动会逐渐向新的自然好感度靠拢。</KIG_ExistingSaveNote>
+	<KIG_MaximumGoodwillPossible>可能达到的最大好感度</KIG_MaximumGoodwillPossible>
+	<KIG_AlliancePossible>可以结盟 ({0} &gt;= 75)</KIG_AlliancePossible>
+	<KIG_PeacePossible>可以和平共处 ({0} &gt;= 0)</KIG_PeacePossible>
+	<KIG_PeaceImpossible>无法和平共处 ({0} &lt; 0)</KIG_PeaceImpossible>
+	<KIG_NaturalGoodwillCalculation>自然好感度计算：</KIG_NaturalGoodwillCalculation>
+	<KIG_ViewsVeryClose>我们的观念非常接近。</KIG_ViewsVeryClose>
+	<KIG_ViewsMostlyAgree>我们在大多数问题上立场一致。</KIG_ViewsMostlyAgree>
+	<KIG_ViewsMostlyDisagree>我们在大多数问题上存在分歧。</KIG_ViewsMostlyDisagree>
+	<KIG_ViewsOpposed>我们的观念根本对立。</KIG_ViewsOpposed>
+	<KIG_MaximumGoodwillCalculation>最大好感度计算：</KIG_MaximumGoodwillCalculation>
+	<KIG_AllowanceVeryClosed>他们极其排外，外交进展严重受限。</KIG_AllowanceVeryClosed>
+	<KIG_AllowanceCautious>他们心存戒备，外交进展有限。</KIG_AllowanceCautious>
+	<KIG_AllowanceOpenDialogue>他们态度开放，外交上有望取得相当大的进展。</KIG_AllowanceOpenDialogue>
+	<KIG_AllowanceOpenCooperation>他们极其友善，外交上有望达成全面合作。</KIG_AllowanceOpenCooperation>
+	<KIG_MaximumGoodwillEquation>可能达到的最大好感度：自然好感度 + A = {0} + {1} = {2}</KIG_MaximumGoodwillEquation>
+	<KIG_MaximumGoodwillRawEquation>可能达到的最大好感度：上限限制前的自然好感度 + A = {0} + {1} = {2}</KIG_MaximumGoodwillRawEquation>
+	<KIG_MaximumGoodwillLimited>应用 -150 至 150 范围限制后：{0}</KIG_MaximumGoodwillLimited>
+</LanguageData>

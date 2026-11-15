@@ -2,7 +2,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-// 在抽取异种阶段修正（源头拦截）
+// 在抽取异种阶段修正
 [HarmonyPatch(typeof(PawnGenerator), nameof(PawnGenerator.GetXenotypeForGeneratedPawn))]
 public static class Patch_GetXenotypeForGeneratedPawn
 {

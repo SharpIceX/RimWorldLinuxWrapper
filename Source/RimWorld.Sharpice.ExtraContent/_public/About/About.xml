@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>SharpIce The RimWorld Extra Content Mod</name>
+	<author>SharpIce</author>
+	<packageId>RimWorld.Sharpice.ExtraContent</packageId>
+	<description>SharpIce 为 RimWorld 或 Mod 增加的额外内容</description>
+	<supportedVersions>
+		<li>1.7</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>kemirgenmint.ideologicalgoodwill</li>
+	</loadAfter>
+</ModMetaData>
