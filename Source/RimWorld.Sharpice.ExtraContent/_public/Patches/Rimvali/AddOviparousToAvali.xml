@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="RVFFA_BaseAvaliXenoType" or defName="RVFFA_Solfeather"]/genes</xpath>
+					<value>
+						<li>VRESaurids_Oviparous</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -7,7 +7,20 @@
 	<supportedVersions>
 		<li>1.7</li>
 	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>vanillaracesexpanded.saurid</packageId>
+			<displayName>Vanilla Races Expanded - Saurid</displayName>
+		</li>
+		<li>
+			<packageId>Nesi.RimValiFFARW</packageId>
+			<displayName>RimVali: Far From Avalon</displayName>
+		</li>
+	</modDependencies>
 	<loadAfter>
 		<li>kemirgenmint.ideologicalgoodwill</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>vanillaracesexpanded.saurid</li>
+		<li>Nesi.RimValiFFARW</li>
 	</loadAfter>
 </ModMetaData>
