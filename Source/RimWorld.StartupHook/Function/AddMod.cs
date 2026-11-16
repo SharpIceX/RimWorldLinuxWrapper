@@ -5,9 +5,9 @@ using HarmonyLib;
 using Verse;
 
 [RimWorldWrapperPatch]
-public static class AddFixMod
+public static class AddMod
 {
-	private static readonly string BaseDir = Path.GetDirectoryName(typeof(AddFixMod).Assembly.Location)!;
+	private static readonly string BaseDir = Path.GetDirectoryName(typeof(AddMod).Assembly.Location)!;
 
 	private static readonly Func<ModMetaData, bool> TryAddMod =
 		(Func<ModMetaData, bool>)
