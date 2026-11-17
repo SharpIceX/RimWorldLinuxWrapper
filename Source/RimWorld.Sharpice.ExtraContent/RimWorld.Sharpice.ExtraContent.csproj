@@ -8,8 +8,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Lib.Harmony" Version="3.0.0-rc.5" PrivateAssets="all" />
-		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.5000-unstable" PrivateAssets="all" />
+		<PackageReference Include="Lib.Harmony" PrivateAssets="all" />
+		<PackageReference Include="Krafs.Rimworld.Ref" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>

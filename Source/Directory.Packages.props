@@ -1,0 +1,9 @@
+<Project>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="Lib.Harmony" Version="3.0.0-rc.5" />
+		<PackageVersion Include="Krafs.Rimworld.Ref" Version="1.7.5011-unstable" />
+	</ItemGroup>
+</Project>
