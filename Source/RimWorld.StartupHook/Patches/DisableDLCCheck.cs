@@ -5,6 +5,8 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using Verse;
 
+namespace RimWorld.StartupHook.Patches;
+
 [RimWorldWrapperPatch]
 public static class DisableDLCCheck
 {

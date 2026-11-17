@@ -1,5 +1,7 @@
 using Verse;
 
+namespace RimWorld.Sharpice.ExtraContent;
+
 public class Main : Mod
 {
 	public Main(ModContentPack content)

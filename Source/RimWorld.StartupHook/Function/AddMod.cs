@@ -4,6 +4,8 @@ using System.Reflection;
 using HarmonyLib;
 using Verse;
 
+namespace RimWorld.StartupHook.Function;
+
 [RimWorldWrapperPatch]
 public static class AddMod
 {

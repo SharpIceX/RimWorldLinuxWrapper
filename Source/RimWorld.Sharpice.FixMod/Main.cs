@@ -2,6 +2,8 @@ using System.Reflection;
 using HarmonyLib;
 using Verse;
 
+namespace RimWorld.Sharpice.FixMod;
+
 public class Main : Mod
 {
 	public Main(ModContentPack content)

@@ -1,6 +1,7 @@
 using HarmonyLib;
-using RimWorld;
 using Verse;
+
+namespace RimWorld.Sharpice.FixMod.Patches.Rimvali;
 
 // 在抽取异种阶段修正
 [HarmonyPatch(typeof(PawnGenerator), nameof(PawnGenerator.GetXenotypeForGeneratedPawn))]

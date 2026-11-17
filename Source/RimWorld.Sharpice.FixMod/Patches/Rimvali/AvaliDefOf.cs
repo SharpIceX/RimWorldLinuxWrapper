@@ -1,6 +1,7 @@
 using System.Linq;
-using RimWorld;
 using Verse;
+
+namespace RimWorld.Sharpice.FixMod.Patches.Rimvali;
 
 [DefOf]
 internal static class AvaliDefOf

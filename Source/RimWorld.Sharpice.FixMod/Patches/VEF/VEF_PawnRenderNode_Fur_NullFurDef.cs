@@ -5,8 +5,10 @@ using System.Reflection.Emit;
 using HarmonyLib;
 using Verse;
 
+namespace RimWorld.Sharpice.FixMod.Patches.VEF;
+
 [HarmonyPatch]
-public static class Patch_VEF_PawnRenderNode_Fur_NullFurDef
+public static class VEF_PawnRenderNode_Fur_NullFurDef
 {
 	private static readonly MethodInfo? Target = AccessTools.Method(
 		"VEF.Genes.VanillaExpandedFramework_PawnRenderNode_Fur_GraphicFor_Patch:Postfix"

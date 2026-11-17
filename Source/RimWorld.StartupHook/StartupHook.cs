@@ -4,6 +4,8 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Loader;
 
+namespace RimWorld.StartupHook;
+
 internal static class StartupHook
 {
 	public static void Initialize()

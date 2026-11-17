@@ -2,6 +2,8 @@ using System;
 using HarmonyLib;
 using Verse;
 
+namespace RimWorld.StartupHook.Patches;
+
 [RimWorldWrapperPatch]
 public static class DisablePseudoTranslation
 {
