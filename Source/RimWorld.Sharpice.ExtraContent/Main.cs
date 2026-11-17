@@ -1,5 +1,3 @@
-using System.Reflection;
-using HarmonyLib;
 using Verse;
 
 public class Main : Mod

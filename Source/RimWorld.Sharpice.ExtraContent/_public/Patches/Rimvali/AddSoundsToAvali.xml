@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="RVFFA_Avali"]/race/lifeStageAges/li</xpath>
+		<value>
+			<soundCall>Rimvali_Avali_Chatter</soundCall>
+			<soundWounded>Rimvali_Avali_Hurt</soundWounded>
+		</value>
+	</Operation>
+</Patch>

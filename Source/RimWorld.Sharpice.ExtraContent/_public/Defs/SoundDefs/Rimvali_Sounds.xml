@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 日常叫声 -->
+	<SoundDef>
+		<defName>Rimvali_Avali_Chatter</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_chatter_female01</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_chatter_female02</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_chatter_female03</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_chatter_male01</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_chatter_male02</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_chatter_male03</clipPath>
+					</li>
+				</grains>
+				<volumeRange>25~30</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- 受伤 -->
+	<SoundDef>
+		<defName>Rimvali_Avali_Hurt</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_hurt_female01</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_hurt_female02</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_hurt_female03</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_hurt_male01</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_hurt_male02</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rimvali/avali_hurt_male03</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~40</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
