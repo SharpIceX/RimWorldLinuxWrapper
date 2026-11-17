@@ -1,5 +1,7 @@
 {
 	"makefile.configureOnOpen": false,
+	"xml.validation.noGrammar": "ignore",
+
 	"[xml]": {
 		"editor.defaultFormatter": "csharpier.csharpier-vscode"
 	},

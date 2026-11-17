@@ -1,0 +1,5 @@
+<Solution>
+	<Project Path="Source/RimWorld.StartupHook/RimWorld.StartupHook.csproj" />
+	<Project Path="Source/RimWorld.Sharpice.FixMod/RimWorld.Sharpice.FixMod.csproj" />
+	<Project Path="Source/RimWorld.Sharpice.ExtraContent/RimWorld.Sharpice.ExtraContent.csproj" />
+</Solution>

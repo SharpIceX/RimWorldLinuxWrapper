@@ -5,7 +5,7 @@
 all: build
 
 build:
-	dotnet build Source --configuration Release
+	dotnet build --configuration Release
 
 clean:
 	rm -rf .temp .bin
