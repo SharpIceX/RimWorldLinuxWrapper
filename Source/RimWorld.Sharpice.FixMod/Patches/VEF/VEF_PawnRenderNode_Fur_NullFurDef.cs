@@ -52,7 +52,6 @@ public static class VEF_PawnRenderNode_Fur_NullFurDef
 			new CodeInstruction(OpCodes.Ldarg_1),
 			new CodeInstruction(OpCodes.Brfalse, returnLabel),
 			// pawn.story == null
-
 			new CodeInstruction(OpCodes.Ldarg_1),
 			new CodeInstruction(OpCodes.Ldfld, StoryField!),
 			new CodeInstruction(OpCodes.Brfalse, returnLabel),

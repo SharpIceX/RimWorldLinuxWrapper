@@ -35,3 +35,6 @@ node_modules/
 # Build & Cache & Temp
 .temp/
 .bin/
+
+# Test
+Source/RimWorld.StartupHook/_TestPatches
