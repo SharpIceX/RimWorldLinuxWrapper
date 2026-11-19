@@ -4,9 +4,12 @@ set -euo pipefail
 
 STEAM_DIR="$HOME/.local/share/Steam"                                                  # Steam 数据目录
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"                                           # 当前目录
+MESA_CACHE_DIR="$HOME/.cache/rimworld-mesa"                                           # MESA 缓存
 RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"                                  # XDG 用户运行时目录
 STEAM_WORKSHOP="$STEAM_DIR/steamapps/workshop/content/294100"                         # Steam 创意工坊目录
 RIMWORLD_DATA_DIR="$HOME/.config/unity3d/Ludeon Studios/RimWorld by Ludeon Studios"   # 游戏数据目录
+
+mkdir -p "$MESA_CACHE_DIR" "$RIMWORLD_DATA_DIR"
 
 # .NET Hook
 export DOTNET_STARTUP_HOOKS="$SCRIPT_DIR/.bin/RimWorld.StartupHook/RimWorld.StartupHook.dll"
@@ -53,11 +56,13 @@ BWRAP_ARGS=(
     # dev
     --dev /dev
     --dir /dev/dri
+	--tmpfs /dev/shm
 	--dev-bind-try /dev/udmabuf /dev/udmabuf
     --dev-bind /dev/dri/renderD128 /dev/dri/renderD128
 
     # 隔离 home
     --tmpfs "$HOME"
+	--bind "$MESA_CACHE_DIR" "$HOME/.cache"
 
     # 游戏存档
     --bind "$RIMWORLD_DATA_DIR" "$RIMWORLD_DATA_DIR"
