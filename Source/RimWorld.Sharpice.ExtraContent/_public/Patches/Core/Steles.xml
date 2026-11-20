@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[@Name="SteleBase"]</xpath>
-        <value>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[@Name="SteleBase"]</xpath>
+		<value>
 			<!-- 使原版石碑可以被移动 -->
-            <minifiedDef>MinifiedThing</minifiedDef>
-        </value>
-    </Operation>
+			<minifiedDef>MinifiedThing</minifiedDef>
+		</value>
+	</Operation>
+
+	<!-- 重量 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="SteleLarge"]/statBases</xpath>
+		<value>
+			<Mass>25</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="SteleGrand"]/statBases</xpath>
+		<value>
+			<Mass>60</Mass>
+		</value>
+	</Operation>
 </Patch>
