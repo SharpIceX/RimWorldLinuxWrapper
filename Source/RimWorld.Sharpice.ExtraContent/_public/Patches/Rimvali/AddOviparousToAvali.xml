@@ -9,6 +9,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/XenotypeDef[defName="RVFFA_BaseAvaliXenoType" or defName="RVFFA_Solfeather"]/genes</xpath>
 					<value>
+						<!-- 添加来自 Vanilla Races Expanded - Saurid Mod 的卵生基因，让 Avali 支持卵生 -->
 						<li>VRESaurids_Oviparous</li>
 					</value>
 				</li>

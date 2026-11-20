@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="SteleBase"]</xpath>
+        <value>
+			<!-- 使原版石碑可以被移动 -->
+            <minifiedDef>MinifiedThing</minifiedDef>
+        </value>
+    </Operation>
+</Patch>
