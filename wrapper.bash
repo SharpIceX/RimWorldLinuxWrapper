@@ -23,6 +23,11 @@ export DOTNET_GCDynamicAdaptationMode=1
 export DOTNET_TieredPGO=1
 export DOTNET_TieredCompilation=1
 
+# .NET CoreDump
+export DOTNET_DbgMiniDumpType=4
+export DOTNET_DbgEnableMiniDump=1
+export DOTNET_DbgMiniDumpName="$RIMWORLD_DATA_DIR/rimworld_%p_%t.dmp"
+
 # bwrap 隔离参数
 BWRAP_ARGS=(
     # etc
