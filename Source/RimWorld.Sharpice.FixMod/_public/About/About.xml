@@ -28,11 +28,17 @@
 			<displayName>RimVali: Far From Avalon</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3121428629</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
+		<li>Nesi.RimValiFFARW</li>
+		<li>RimVali.Rewritten.Core</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>hubertdragon.rimmessianfox</li>
-		<li>RimVali.Rewritten.Core</li>
-		<li>Nesi.RimValiFFARW</li>
+		<li>shuib.pokeworld.standalone</li>
 	</loadAfter>
 </ModMetaData>
